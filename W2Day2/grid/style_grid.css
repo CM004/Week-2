@@ -1,0 +1,76 @@
+/* Container */
+.wrap{
+  width:50%;
+  margin:auto;
+  display:grid;
+  gap:10px;
+  font-size: xx-large;
+}
+
+/* Top row: header + menu side by side */
+.top{
+  display:grid;
+  grid-template-columns:170px 1fr;  /* left small, right fills */
+  gap:10px;
+}
+.left{
+  background:navy;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+.right{
+  background:red;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* Hero full width */
+.hero{
+  background:blue;
+  color:white;
+  padding:80px;
+  text-align:center;
+}
+
+/* Content area: main + sidebar */
+.row{
+  display:grid;
+  grid-template-columns:2fr 1fr;  /* main twice as wide as side */
+  gap:250px;
+}
+.main{
+  background:grey;
+  color:white;
+  padding:60px;
+  text-align:center;
+}
+.side{
+  display:grid;
+  gap:10px;
+}
+.img{
+  background:cyan;
+  padding:18px;
+  text-align:center;
+}
+.extra{
+  background:darkgreen;
+  padding:18px;
+  text-align:center;
+}
+
+/* Banner full width */
+.banner{
+  background:yellow;
+  padding:20px;
+  text-align:center;
+}
+
+/* Responsive: stack vertically on small screens */
+@media(max-width:700px){
+  .top, .row{
+    grid-template-columns:1fr;   /* 1 column stack */
+  }
+}

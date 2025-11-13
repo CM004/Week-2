@@ -1,0 +1,31 @@
+.wrap {
+  width: 50%;
+  display: grid;
+  gap: 10px;
+  margin:  auto;
+  padding: 20px;
+
+  /* Define columns and rows roughly like the layout */
+  grid-template-columns:  repeat(4, 1fr);
+  grid-template-rows: minmax(100px, auto);
+
+  grid-template-areas:
+    "header header menu   menu"
+    "hero   hero   hero   hero"
+    "main   main   .      image"
+    "main   main   .      extra"
+    "banner banner banner banner";
+}
+
+
+/* Assign each area */
+.top{display:inline-grid;gap:10px}
+.left   { grid-area: header; background: #172433; color: #fff; display:flex; align-items:center; justify-content:center; font-size: 22px; }
+.right  { grid-area: menu;   background: #e84a5f; color: #fff; display:flex; align-items:center; justify-content:center; font-size: 22px; }
+
+
+.hero   { grid-area: hero;   background: #4f86c7; color: #fff; display:flex; align-items:center; justify-content:center; font-size: 22px; }
+.main   { grid-area: main;   background: #233145; color: #fff; display:flex; align-items:center; justify-content:center; font-size: 22px; }
+.img    { grid-area: image;  background: #b6e6e0; color: #000; display:flex; align-items:center; justify-content:center; font-size: 22px; }
+.extra  { grid-area: extra;  background: #36b98d; color: #000; display:flex; align-items:center; justify-content:center; font-size: 22px; }
+.banner { grid-area: banner; background: #f6cf61; color: #000; display:flex; align-items:center; justify-content:center; font-size: 22px; }
