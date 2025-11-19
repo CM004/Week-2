@@ -51,7 +51,7 @@ It included all essential features: **Add**, **Edit**, **Delete**, and **Mark Co
 I also implemented simple error handling using a `logs/errors.md` file.
 
 **Todo App Screens**  
- ![alt text](image.png)
+ ![alt text](todo.png)
 ---
 
 ## Day 5 – E-commerce Product Listing Project
